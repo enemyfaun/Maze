@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="background.css">
+     <title>Maze</title>
+</head>
+
+<body class="flex-row">
+     <div id="title" class="flex-column">
+          <h1>MAZE</h1>
+          <h1 id="size"></h1>
+     </div>
+
+     <div id="Grid" class="flex-column margin-column">
+     </div>
+
+     <div id="buttons" class="flex-row margin-column">
+          <div id="manageSize" class="flex-row">
+               <div id="addRow" class="button verticalButton flex-column">+</div>
+               <div id="removeColumn" class="button horizontalButton flex-column">-</div>
+               <div id="points" class="button centerButton flex-column">o</div>
+               <div id="addColumn" class="button horizontalButton flex-column">+</div>
+               <div id="removeRow" class="button verticalButton flex-column">-</div>
+          </div>
+     </div>
+
+     <script src="manageGrid.js"></script>
+     <script src="maze.js"></script>
+</body>
+
+</html>

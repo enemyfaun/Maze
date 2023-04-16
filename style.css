@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt&display=swap");
+
+* {
+     margin: 0;
+     padding: 0;
+     user-select: none;
+}
+
+.flex-row {
+     display: flex;
+     flex-flow: row nowrap;
+     justify-content: center;
+     align-items: center;
+}
+
+.flex-column {
+     display: flex;
+     flex-flow: column nowrap;
+     justify-content: center;
+     align-items: center;
+}
+
+.margin-column {
+     margin-top: 5vh;
+     margin-bottom: 5vh;
+}
+
+body {
+     position: absolute;
+     top: 0;
+     width: 100vw;
+     flex-flow: row wrap !important;
+}
+
+#title {
+     margin-left: 45vw;
+     margin-right: 45vw;
+     font-family: "Prompt", sans-serif;
+}
+
+h1 {
+     background-color: white;
+     border-radius: 10px;
+     padding-left: 30px;
+     padding-right: 30px;
+}
+
+#Grid {
+     background-color: red;
+     margin-left: 10px;
+}
+
+cuadro {
+     border: 1px rgb(0, 0, 0) solid;
+
+     background-color: rgb(255, 255, 255);
+     background-repeat: no-repeat;
+     background-size: 80%;
+     background-position-x: center;
+     background-position-y: center;
+     background-blend-mode: multiply;
+}
+
+cuadro:hover {
+     background-color: rgb(96, 154, 255);
+}
+
+#manageSize {
+     width: calc(37vh + 80px);
+     flex-wrap: wrap !important;
+}
+
+.button {
+     background-color: rgb(255, 255, 255);
+     border: 2px black solid;
+     border-radius: 5px;
+
+     font-size: 4vw;
+     font-family: monospace;
+}
+
+.verticalButton {
+     width: 7vh;
+     height: 15vh;
+     margin-left: calc(15vh + 40px);
+     margin-right: calc(15vh + 40px);
+     margin-top: 5px;
+     margin-bottom: 5px;
+}
+
+.horizontalButton {
+     width: 15vh;
+     height: 7vh;
+     margin-left: 5px;
+     margin-right: 5px;
+}
+
+.centerButton {
+     width: 7vh;
+     height: 7vh;
+}
+
+.button:hover {
+     background-color: rgb(173, 148, 220);
+}
+
+.wall {
+     background-color: black;
+}
+
+.point {
+     background-image: url(Resources/porton.png) !important;
+     background-repeat: no-repeat;
+     background-size: 80%;
+     background-position-x: center;
+     background-position-y: center;
+     background-blend-mode: multiply;
+}
+
+.pointsButton {
+     background-color: rgb(0, 0, 0);
+     color: white !important;
+}
+
+.error {
+     background-color: red;
+}
