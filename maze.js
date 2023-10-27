@@ -154,10 +154,10 @@ let buildWay = (matrix) => {
      }
 };
 
-let solve = () => {
+let solve = (o) => {
      if (cPoints.length >= 2) {
           let matrix = getMatrix();
-          if (1) {
+          if (o) {
                let succes = run(
                     matrix,
                     cPoints[0][0],
