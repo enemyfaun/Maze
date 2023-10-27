@@ -2,6 +2,7 @@ let grid;
 let isActiveSelection = 0;
 let rows = 5;
 let columns = 5;
+let o = 1;
 
 let inizializateGrid = () => {
      grid = document.getElementById("Grid");
@@ -27,7 +28,7 @@ let inizializateGrid = () => {
 
      actualizateSizeSquares();
      actualizateTittle();
-     solve();
+     solve(o);
 };
 
 let addRow = () => {
@@ -117,7 +118,7 @@ let toggleWall = (square) => {
           cPoints.push([i, j]);
           isActiveSelection--;
      }
-     solve();
+     solve(o);
 };
 
 let setPoints = () => {
